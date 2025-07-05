@@ -8,17 +8,19 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body onLoad="preLoad()" class="">
-<div id="navbar" class="flex pl-6 pr-5 md:pl-10 md:pr-10 font-mono navbar bg-base-100 border-b-1">
-  <div class="navbar-start text-lg md:text-xl">
-    Anugerah
+<div id="navbar" class="flex pl-3 pr-5 md:pl-10 md:pr-10 font-mono navbar bg-base-100 border-b-1">
+  <div class="navbar-start ">
+    <div class="animate-jiggle animate-duration-[2000ms] animate-iteration-count-infinite text-[9px] md:text-sm font-black badge-warning badge border-2 border-dashed border-black">
+      AVAILABLE FOR NEW PROJECTS
+    </div>
   </div>
   <div class="navbar-end gap-3">
-    <a href="#design" class="badge border-black italic text-sm md:text-xl place-items-center hover:cursor-pointer hover:animate-scale">
+    <a href="#design" class="rotate-3 badge border-black italic text-sm md:text-xl place-items-center hover:cursor-pointer hover:animate-scale">
       Design
       <!-- <dotlottie-player class="" src="https://lottie.host/c57a26bb-b7f0-4dd3-bf1d-7a42866d2cab/zaPUFN5wfY.lottie" background="transparent" speed="2" style="width: 70px; height: 5px" loop autoplay></dotlottie-player> -->
     </a>
-    <a href="#contact" class="badge border-black italic text-sm md:text-xl place-items-center hover:cursor-pointer hover:animate-scale">
-      More
+    <a href="#contact" class="-rotate-3 badge border-black italic text-sm md:text-xl place-items-center hover:cursor-pointer hover:animate-scale">
+      Connect
       <!-- <dotlottie-player class="" src="https://lottie.host/c57a26bb-b7f0-4dd3-bf1d-7a42866d2cab/zaPUFN5wfY.lottie" background="transparent" speed="2" style="width: 100px; height: 5px" loop autoplay></dotlottie-player> -->
     </a>
   </div>
@@ -30,19 +32,19 @@
   <div class="flex">
     <div class="border-r-1 p-5 bg-center bg-repeat bg-[url(/img/p5.webp)]"></div>
     <div class="grow p-6 mt-3 md:p-15 md:mt-10  animate-fade-in-right">
-      <div class="join mb-5 -rotate-4">
-        <div id="now-playing-badge" class="border-2 border-dashed border-black join-item font-bold italic text-[9px] md:text-sm badge w-full h-full md:badge-md">He is not listening to anything</div>
-      </div>
       <div class="text-3xl font-black mb-3">
         Anugerah. 
       </div>
       <p class="text-sm lg:text-2xl">
               Passionate graphic designer and video editor with 7+ years of experience creating visually compelling content that resonates with audiences. From designing Instagram posters that attract hundreds of engagements to producing videos with over 8,000 views, I thrive on turning creative ideas into impactful visuals.
             </p>
+        
+
             <a href="src/CV - Anugerah_3.pdf" class="hover:animate-bouncing hover:cursor-pointer w-50 italic text-md lg:text-xl ">Download Resume</a>
             <dotlottie-player class="hidden md:block pb-7" src="https://lottie.host/c57a26bb-b7f0-4dd3-bf1d-7a42866d2cab/zaPUFN5wfY.lottie" background="transparent" speed="1" style="width: 150px; height: 40px" loop autoplay></dotlottie-player>
           <dotlottie-player class="block md:hidden pb-7" src="https://lottie.host/c57a26bb-b7f0-4dd3-bf1d-7a42866d2cab/zaPUFN5wfY.lottie" background="transparent" speed="1" style="width: 120px; height: 40px" loop autoplay></dotlottie-player>
         </div>
+        
         <div class="animate-bounce-fade-in m-15 mr-15 h-fit hidden md:block border-1 "><dotlottie-player
   src="https://lottie.host/c9a4be7f-bad6-4bc1-8fa2-c7097a2a16cb/uJysZz6BmH.lottie"
   background="transparent"
@@ -50,7 +52,9 @@
   style="width: 300px; height: 300px"
   loop
   autoplay
-></dotlottie-player></div>
+></dotlottie-player>
+
+</div>
         <!-- <img class="animate-bounce-fade-in m-5 mr-15 hidden md:block border-1 aspect-square" src="img/dot-grid.webp" alt="" srcset="">  -->
       </div>
   </div>
@@ -70,12 +74,16 @@
           <dotlottie-player class="rotate-90" src="https://lottie.host/a8afc9f8-00cd-417a-8716-a06ffb113c19/sMJjA62fUE.lottie" background="" speed="1" style="width: 90px; height: 200px" loop autoplay></dotlottie-player>
         </div>
         <!-- Split  -->
-        <div class="mx-auto place-content-center pr-7 md:pr-0 md:-mt-3 -mt-6 md:mb-30 ">
-          <div class="md:place-items-center place-items-end-safe md:h-auto">
+        <div class="mx-auto place-items-end md:place-items-center pr-7 md:pr-0 md:-mt-3 -mt-6 md:mb-30 ">
+          <a href="https://www.last.fm/user/nugehood" target="_blank" class="join animate-heartbeat animate-duration-[2000ms] animate-iteration-count-infinite">
+            <div class="mt-3 md:mt-0 border-2 badge-success border-dashed border-black join-item font-bold italic text-[9px] md:text-sm badge md:badge-md">🎵</div> 
+            <div id="now-playing-badge" class="mt-3 md:mt-0 border-2 badge-success border-dashed border-black join-item font-bold italic text-[9px] md:text-sm badge md:badge-md">Listening to nothing</div> 
+          </a>
+          <div class="place-items-end md:place-items-center md:h-auto">
             <dotlottie-player src="https://lottie.host/4f518df4-da94-423f-9267-40ae52e4ed01/SBF3nme8z8.lottie" background="transparent" speed="1" style="width: 100px; height: 89px" loop autoplay></dotlottie-player>
           </div>
-            <div class="text-5xl text-right leading-15 md:leading-13 block md:text-center"><i>Hey,</i> check <i>these</i> <br> out!</div>
-            <div class="place-items-center  hidden md:block">
+            <div class="text-5xl text-right md:text-center leading-14 md:leading-13 block"><i>Hey,</i> check <i>these</i> <br> out!</div>
+            <div class="place-items-center hidden md:block">
               <dotlottie-player class="rotate-85" src="https://lottie.host/a8afc9f8-00cd-417a-8716-a06ffb113c19/sMJjA62fUE.lottie" background="" speed="1" style="width: 100px; height: 50px" loop autoplay></dotlottie-player>
             </div>
         </div>
@@ -302,9 +310,9 @@
       const badge = document.getElementById('now-playing-badge');
 
       if (data.message && data.message !== 'Nothing playing') {
-        badge.textContent = 'He is listening to: ' + data.message;
+        badge.textContent = 'Listening to: ' + data.message;
       } else {
-        badge.textContent = 'He is not listening to anything';
+        badge.textContent = 'Listening to nothing';
       }
     } catch (err) {
       const badge = document.getElementById('now-playing-badge');
