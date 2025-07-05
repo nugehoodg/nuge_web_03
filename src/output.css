@@ -1720,8 +1720,17 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
   .w-50 {
     width: calc(var(--spacing) * 50);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-250 {
     width: calc(var(--spacing) * 250);
@@ -1734,6 +1743,9 @@
   }
   .max-w-full {
     max-width: 100%;
+  }
+  .min-w-fit {
+    min-width: fit-content;
   }
   .min-w-full {
     min-width: 100%;
@@ -2268,6 +2280,11 @@
   .md\:min-h-65 {
     @media (width >= 48rem) {
       min-height: calc(var(--spacing) * 65);
+    }
+  }
+  .md\:w-fit {
+    @media (width >= 48rem) {
+      width: fit-content;
     }
   }
   .md\:grid-cols-4 {
