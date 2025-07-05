@@ -7,7 +7,7 @@
     <title>Anugerah</title>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
-<body class="">
+<body onLoad="preLoad()" class="">
 <div id="navbar" class="flex gap-5 pl-10 pr-10 font-mono navbar bg-base-100 border-b-1">
   <div class="navbar-start text-lg md:text-xl">
     Anugerah
@@ -50,6 +50,10 @@
 ></dotlottie-player></div>
         <!-- <img class="animate-bounce-fade-in m-5 mr-15 hidden md:block border-1 aspect-square" src="img/dot-grid.webp" alt="" srcset="">  -->
       </div>
+                      <div class="join">
+                  <div class="join-item font-bold text-xs md:text-sm badge badge-neutral badge-xl md:badge-md h-full">🎧</div>
+                  <div id="now-playing-badge" class="join-item font-bold italic text-xs md:text-sm badge badge-success w-full h-full md:badge-md">Not playing anything</div>
+              </div>
   </div>
 
   <div class="mx-auto min-w-full min-h-full font-serif ">
