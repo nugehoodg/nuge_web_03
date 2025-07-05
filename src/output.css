@@ -1472,8 +1472,14 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -1489,6 +1495,12 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-7 {
+    margin-bottom: calc(var(--spacing) * 7);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .badge {
     display: inline-flex;
@@ -2115,6 +2127,13 @@
       }
     }
   }
+  .hover\:animate-bouncing {
+    &:hover {
+      @media (hover: hover) {
+        animation: bouncing 1s ease-in-out both;
+      }
+    }
+  }
   .hover\:animate-jelly {
     &:hover {
       @media (hover: hover) {
@@ -2141,6 +2160,13 @@
       @media (hover: hover) {
         --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:animate-bezier-back-in {
+    &:hover {
+      @media (hover: hover) {
+        animation-timing-function: cubic-bezier(0.6,-0.28,0.735,0.045);
       }
     }
   }
@@ -3032,6 +3058,17 @@
   syntax: "*";
   inherits: false;
   initial-value: 1;
+}
+@keyframes bouncing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @keyframes scale {
   0% {
