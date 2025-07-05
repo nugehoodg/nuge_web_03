@@ -8,10 +8,11 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body onLoad="preLoad()" class="">
-<div id="navbar" class="flex gap-5 pl-10 pr-10 font-mono navbar bg-base-100 border-b-1">
+<div id="navbar" class="flex gap-5 pl-6 pr-5 md:pl-10 md:pr-10 font-mono navbar bg-base-100 border-b-1">
   <div class="navbar-start text-lg md:text-xl">
     Anugerah
   </div>
+  <div class="navbar-center"></div>
   <div class="navbar-end">
     <a href="#design" class=" italic text-lg md:text-xl place-items-center hover:cursor-pointer hover:animate-scale">
       Design
@@ -27,13 +28,17 @@
 
 
 <div class="mx-auto min-w-full min-h-full border-b-1 font-serif ">
-      <div class="flex">
-        <div class="border-r-1 p-5 bg-center bg-repeat bg-[url(/img/p5.webp)]"></div>
-        <div class="grow p-6 mt-3 md:p-15 md:mt-10  animate-fade-in-right">
-          <div class="text-3xl font-black mb-3">
-            Anugerah.
-          </div>
-            <p class="text-sm lg:text-2xl">
+  <div class="flex">
+    <div class="border-r-1 p-5 bg-center bg-repeat bg-[url(/img/p5.webp)]"></div>
+    <div class="grow p-6 mt-3 md:p-15 md:mt-10  animate-fade-in-right">
+      <div class="join mb-3 -rotate-4">
+        <div class="border-1 border-black join-item font-bold text-xs md:text-sm badge badge-xl md:badge-md h-full">🎵</div>
+        <div id="now-playing-badge" class="border-1 border-black join-item font-bold italic text-xs md:text-sm badge w-full h-full md:badge-md">He is not listening to anything</div>
+      </div>
+      <div class="text-3xl font-black mb-3">
+        Anugerah. 
+      </div>
+      <p class="text-sm lg:text-2xl">
               Passionate graphic designer and video editor with 7+ years of experience creating visually compelling content that resonates with audiences. From designing Instagram posters that attract hundreds of engagements to producing videos with over 8,000 views, I thrive on turning creative ideas into impactful visuals.
             </p>
             <a href="src/CV - Anugerah_3.pdf" class=" hover:animate-jelly hover:cursor-pointer w-50 italic text-md lg:text-xl mt-3 ">Download Resume</a>
@@ -50,10 +55,6 @@
 ></dotlottie-player></div>
         <!-- <img class="animate-bounce-fade-in m-5 mr-15 hidden md:block border-1 aspect-square" src="img/dot-grid.webp" alt="" srcset="">  -->
       </div>
-                      <div class="join">
-                  <div class="join-item font-bold text-xs md:text-sm badge badge-neutral badge-xl md:badge-md h-full">🎧</div>
-                  <div id="now-playing-badge" class="join-item font-bold italic text-xs md:text-sm badge badge-success w-full h-full md:badge-md">Not playing anything</div>
-              </div>
   </div>
 
   <div class="mx-auto min-w-full min-h-full font-serif ">
@@ -303,9 +304,9 @@
       const badge = document.getElementById('now-playing-badge');
 
       if (data.message && data.message !== 'Nothing playing') {
-        badge.textContent = 'Now listening to: ' + data.message;
+        badge.textContent = 'He is listening to: ' + data.message;
       } else {
-        badge.textContent = 'Not listening to anything';
+        badge.textContent = 'He is not listening to anything';
       }
     } catch (err) {
       const badge = document.getElementById('now-playing-badge');

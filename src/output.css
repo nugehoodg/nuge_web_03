@@ -11,6 +11,7 @@
     --color-red-200: oklch(88.5% 0.062 18.334);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -1525,6 +1526,11 @@
     width: 50%;
     justify-content: flex-start;
   }
+  .navbar-center {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
   .join {
     display: inline-flex;
     align-items: stretch;
@@ -1729,6 +1735,15 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-rotate-3 {
+    rotate: calc(3deg * -1);
+  }
+  .-rotate-4 {
+    rotate: calc(4deg * -1);
+  }
+  .rotate-3 {
+    rotate: 3deg;
+  }
   .rotate-85 {
     rotate: 85deg;
   }
@@ -1864,6 +1879,18 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-3 {
+    border-style: var(--tw-border-style);
+    border-width: 3px;
+  }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
   .border-t-1 {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -1883,6 +1910,9 @@
   .border-black {
     border-color: var(--color-black);
   }
+  .border-b-blue-900 {
+    border-bottom-color: var(--color-blue-900);
+  }
   .bg-base-100 {
     background-color: var(--color-base-100);
   }
@@ -1900,6 +1930,9 @@
   }
   .mask-repeat {
     mask-repeat: repeat;
+  }
+  .stroke-3 {
+    stroke-width: 3;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -1921,6 +1954,12 @@
     font-size: 1.125rem;
     padding-inline: calc(0.25rem * 4 - var(--border));
   }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
   .pr-7 {
     padding-right: calc(var(--spacing) * 7);
   }
@@ -1929,6 +1968,12 @@
   }
   .pb-7 {
     padding-bottom: calc(var(--spacing) * 7);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
   }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
@@ -2214,6 +2259,16 @@
   .md\:pr-0 {
     @media (width >= 48rem) {
       padding-right: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pr-10 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:pl-10 {
+    @media (width >= 48rem) {
+      padding-left: calc(var(--spacing) * 10);
     }
   }
   .md\:text-center {
