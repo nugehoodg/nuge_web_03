@@ -2020,6 +2020,9 @@
   .pb-7 {
     padding-bottom: calc(var(--spacing) * 7);
   }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
   }
@@ -2068,6 +2071,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[8px\] {
+    font-size: 8px;
   }
   .text-\[9px\] {
     font-size: 9px;
