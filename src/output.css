@@ -1907,6 +1907,9 @@
   .w-300 {
     width: calc(var(--spacing) * 300);
   }
+  .w-dvw {
+    width: 100dvw;
+  }
   .w-full {
     width: 100%;
   }
